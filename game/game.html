@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+<head>
+    <title>Juego de Amor 🐍❤️</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gamecss.css">
+</head>
+<body>
+    <div class="game-container">
+        
+        <!-- HEADER -->
+        <div class="header">
+            <h1>🐍 JUEGO DEL AMOR 💕</h1>
+            <div class="score-info">
+                <p>Puntos: <span id="score">0</span></p>
+                <p>Nivel: <span id="level">1</span></p>
+            </div>
+        </div>
+
+        <!-- CANVAS DEL JUEGO -->
+        <canvas id="gameCanvas" width="400" height="400"></canvas>
+
+        <!-- CONTROLES -->
+        <div class="controls">
+            <button class="btn-control" id="startBtn">▶️ INICIAR</button>
+            <button class="btn-control" id="pauseBtn">⏸️ PAUSAR</button>
+            <button class="btn-control" id="resetBtn">🔄 REINICIAR</button>
+        </div>
+
+        <!-- INSTRUCCIONES -->
+        <div class="instructions">
+            <h3>📖 Cómo jugar:</h3>
+            <p>🎯 Usa las <strong>flechas</strong> para mover</p>
+            <p>❤️ Come los "corazones" para crecer</p>
+            <p>💬 ¡Recibe mensajes de amor!</p>
+            <p>⚠️ No choqués con las paredes ni contigo mismo</p>
+        </div>
+
+        <!-- NOTIFICACIÓN DE MENSAJE -->
+        <div class="notification" id="notification">
+            <p id="notificationText"></p>
+        </div>
+
+    </div>
+
+    <script src="game.js"></script>
+    
+</body>
+</html>
